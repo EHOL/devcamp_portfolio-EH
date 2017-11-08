@@ -1,0 +1,44 @@
+<div class="app-card-container">
+  <div class="card">
+    <h1>About Me</h1>
+
+    <hr>
+
+    <div class="row">
+      <div class="col-md-4">
+        <%= image_tag "Eric_snowboard.jpg", width: 300, alt: "profile image", class: 'profile-img' %>
+         <div class="skills">
+          <% @skills.each do |skill| %>
+            <div class="skill">
+              <h4><%= skill.title %></h4>
+             <div class="progress">
+                <div
+                  class="progress-bar progress-bar-striped bg-warning"
+                  role="progressbar"
+                  aria-valuenow="<%= skill.percent_utilized %>"
+                  aria-valuemax="100"
+                  style="width: <%= skill.percent_utilized %>%"
+                ></div>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="col-md-8">
+        <p>
+          With about seven years of real world work experience in a few different industries, I realized that I needed to find my real passion. I have always loved problems solving and creating new things. The knowledge I have in commercial real estate, financial planning, and insurance is extremely valuable and now with programming, I have an avenue to share that knowledge more fully.
+        </p>
+
+        <p>
+          I hope to create applications that will help the well being of my generation and those to come. I'd like to offer education for the overall betterment of society. Oh and if you couldn't tell, I like to have fun in the outdoors which adds to my passion for financial freedom.
+        </p>
+
+        <%= render 'about_buttons' %>
+        <%= render 'about_job_history' %>
+        <%= render 'about_education' %>
+
+      </div>
+    </div>
+  </div>
+</div>
