@@ -34401,7 +34401,7 @@ var Dropdown = function () {
           flip: {
             enabled: this._config.flip
           }
-        } // Disable Popper.js for Dropdown in Navbar
+        }  Disable Popper.js for Dropdown in Navbar
 
       };
 
