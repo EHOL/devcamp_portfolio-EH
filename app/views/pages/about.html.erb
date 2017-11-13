@@ -7,11 +7,27 @@
     <div class="row">
       <div class="col-md-4">
         <%= image_tag "Eric_snowboarding.jpg", width: 300, alt: "profile image", class: 'profile-img' %>
-         <div class="skills">
+        
+      </div>
+
+      <div class="col-md-8">
+        <p>
+          With a background in real estate investment as well as insurance, I found a passion for software engineering. This passion drives me to create applications for the benefit of society. By combining my talents, I am an asset to any company or business. Not only do I bring value, I give back to those who are needed advice in these areas in financial technology.
+        </p>
+
+        <p>
+          I decided to utilize a development pattern that focuses on highly focused communication and transparent design patterns. When I take on a project not only do I work to craft the application according to the client's specifications, I give daily updates to ensure that the project is aligning properly with the client's goals. The end result is the right product, delivered on time, and on budget.
+        </p>
+
+        <%= render 'about_buttons' %>
+        <%= render 'about_job_history' %>
+        <%= render 'about_education' %>
+
+        <div class="skills">
           <% @skills.each do |skill| %>
             <div class="skill">
               <h4><%= skill.title %></h4>
-             <div class="progress">
+              <div class="progress">
                 <div
                   class="progress-bar progress-bar-striped bg-warning"
                   role="progressbar"
@@ -22,23 +38,7 @@
               </div>
             </div>
           <% end %>
-        </div>
-      </div>
-
-      <div class="col-md-8">
-        <p>
-          With about seven years of real world work experience in a few different industries, I realized that I needed to find my real passion. I have always loved problems solving and creating new things. The knowledge I have in commercial real estate, financial planning, and insurance is extremely valuable and now with programming, I have an avenue to share that knowledge more fully.
-        </p>
-
-        <p>
-          I hope to create applications that will help the well being of my generation and those to come. I'd like to offer education for the overall betterment of society. Oh and if you couldn't tell, I like to have fun in the outdoors which adds to my passion for financial freedom.
-        </p>
-
-        <%= render 'about_buttons' %>
-        <%= render 'about_job_history' %>
-        <%= render 'about_education' %>
-
-      </div>
+        </div>        
     </div>
   </div>
 </div>
