@@ -303,6 +303,7 @@ DEPENDENCIES
   mini_magick (~> 4.6)
   petergate (~> 1.7)
   pg (~> 0.18)
+  popper_js (~> 1.12.3)
   pry-byebug
   puma (~> 3.10)
   rails (~> 5.0.1)
@@ -322,4 +323,4 @@ RUBY VERSION
    ruby 2.4.0p0
 
 BUNDLED WITH
-   1.16.0.pre.3
+   1.16.0
