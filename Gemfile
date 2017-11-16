@@ -51,4 +51,4 @@ gem 'popper_js', '~> 1.12.3'
 
 ruby "2.4.0"
 
-gem 'hirb'
+
