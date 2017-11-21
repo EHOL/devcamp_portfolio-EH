@@ -34596,9 +34596,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
  * Bootstrap (v4.0.0-beta.2): tab.js
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * --------------------------------------------------------------------------
- */
-var Tab = function () {
-  /**
+
    * ------------------------------------------------------------------------
    * Constants
    * ------------------------------------------------------------------------
