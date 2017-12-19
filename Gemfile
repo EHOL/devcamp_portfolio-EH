@@ -48,8 +48,8 @@ gem 'redcarpet', '~> 3.4'
 gem 'coderay', '~> 1.1', '>= 1.1.1'
 gem 'popper_js', '~> 1.12.3'
 gem 'autoprefixer-rails', '~> 7.1', '>= 7.1.6'
-gem 'sass', '~> 3.5', '>= 3.5.3'
+gem 'sprockets-rails', '~> 3.2', '>= 3.2.1'
 
 ruby "2.4.0"
 
-gem 'hirb', '~> 0.7.3'
+
